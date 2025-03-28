@@ -35,7 +35,7 @@ const BreakingNews = () => {
             />
             <Link
               href="#"
-              className="leading-[100%] hover:text-custom-red duration-300 underline decoration-black hover:decoration-custom-red"
+              className="leading-[100%] hover:text-custom-red duration-300 underline decoration-black underline-offset-2 decoration-[1px] hover:decoration-custom-red"
             >
               Read More...
             </Link>

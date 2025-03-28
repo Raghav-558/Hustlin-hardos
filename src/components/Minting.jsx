@@ -45,7 +45,7 @@ const Minting = () => {
       />
       <div className="border-y-2 border-black flex items-center justify-center max-xl:px-4 max-md:px-0">
         <div className="max-w-[1140px] mx-auto border-l-2 max-lg:border-x-2 border-black flex items-center justify-center max-lg:flex-col max-md:mx-4">
-          <div className="pl-[25px] w-full max-lg:px-10 max-lg:py-5 max-md:px-6 pr-[107px] py-11 max-xl:px-5 max-xl:py-3.5">
+          <div className="pl-[25px] w-full max-lg:px-10 max-lg:py-5 max-md:px-6 pr-[107px] py-[42px] max-xl:px-5 max-xl:py-3.5">
             <Description
               myClass="leading-[150%] max-w-[438px] max-lg:max-w-[389px] pb-[15px] max-xl:pb-3 max-lg:pb-2 max-md:text-sm"
               text="Most of the Hustlin’ Hardos first experienced NFTs via other

@@ -10,9 +10,9 @@ const Roadmap = () => {
         <CustomHeading text="RoadMap" myClass="" />
       </div>
       <div className="border-y-2 border-black px-4">
-        <div className="max-w-[1140px] mx-auto w-full border-x-2 border-black xl:pb-[450px]">
+        <div className="max-w-[1140px] mx-auto w-full border-x-2 border-black xl:pb-[400px]">
           <div className="py-[99px] relative flex flex-col pl-9 pr-4 max-xl:pl-6 max-lg:gap-10 max-lg:pl-20 max-md:gap-6 max-md:pl-[60px] max-md:pr-4 max-lg:py-16 max-md:py-10">
-            <div className="h-[86%] xl:h-[145%] w-0.5 bg-black absolute left-1/2 -translate-x-1/2 max-xl:left-[48%] top-[52%] -translate-y-1/2 max-lg:left-[5%] max-lg:h-[90%] max-md:left-[7%] max-md:h-[95%] max-md:top-[51%] roadmap-line"></div>
+            <div className="h-[86%] xl:h-[115%] w-0.5 bg-black absolute left-1/2 -translate-x-1/2 max-xl:left-[48%] top-[52%] xl:top-[65%] -translate-y-1/2 max-lg:left-[5%] max-lg:h-[90%] max-md:left-[7%] max-md:h-[95%] max-md:top-[51%] roadmap-line"></div>
             {ROADMAP_LIST.map((item, i) => (
               <div
                 key={i}
