@@ -2,16 +2,13 @@ import "./globals.css";
 
 export const metadata = {
   title: "Hustlin Hardos",
-  description:
-    "Hustlin' Hardos is a collection of 9,999 NFT characters on the Ethereum Blockchain,",
+  description:"Hustlin' Hardos is a collection of 9,999 NFT characters on the Ethereum Blockchain,",
   openGraph: {
     title: "Hustlin Hardos",
-    description:
-      "Hustlin' Hardos is a collection of 9,999 NFT characters on the Ethereum Blockchain,",
+    description:"Hustlin' Hardos is a collection of 9,999 NFT characters on the Ethereum Blockchain,",
     images: [
       {
         url: "/meta-img.png",
-        alt: "meta-img",
         width: 800,
         height: 600,
       },

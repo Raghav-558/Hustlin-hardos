@@ -47,24 +47,24 @@ body {
   display: flex;
 }
 
-.roadmap-line::after {
+.roadmap-arrow::after {
   position: absolute;
   content: "";
-  bottom: 1px;
   width: 10px;
   height: 2px;
-  left: 0;
-  background-color: #000000;
+  bottom: 1px;
+  left: -0.5px;
   transform: rotate(-45deg) translateY(-1px);
+  background-color: black;
 }
 
-.roadmap-line::before {
+.roadmap-arrow::before {
   position: absolute;
   content: "";
-  bottom: 1px;
   width: 10px;
   height: 2px;
-  left: -8px;
-  background-color: #000000;
+  bottom: 1px;
+  left: -7.3px;
   transform: rotate(45deg) translateY(-1px);
+  background-color: black;
 }

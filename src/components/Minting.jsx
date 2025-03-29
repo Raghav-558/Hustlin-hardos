@@ -8,11 +8,11 @@ import CustomButton from "./common/CustomButton";
 
 const Minting = () => {
   const [count, setCount] = useState(100);
-  const [timeRemaining, setTimeRemaining] = useState(
+  const [remainingTime, setRemainingTime] = useState(
     40 * 24 * 3600 + 15 * 3600 + 12 * 60 + 10
   );
 
-  const formatTime = (seconds) => {
+  const timeChange = (seconds) => {
     const days = Math.floor(seconds / (3600 * 24));
     const hours = Math.floor((seconds % (3600 * 24)) / 3600);
     const minutes = Math.floor((seconds % 3600) / 60);
@@ -28,14 +28,14 @@ const Minting = () => {
   };
 
   useEffect(() => {
-    if (timeRemaining <= 0) return;
+    if (remainingTime <= 0) return;
 
     const interval = setInterval(() => {
-      setTimeRemaining((prevTime) => prevTime - 1);
+      setRemainingTime((prevTime) => prevTime - 1);
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [timeRemaining]);
+  }, [remainingTime]);
 
   return (
     <div id="minting" className="pt-22 max-xl:pt-[60px] max-lg:pt-10">
@@ -47,7 +47,6 @@ const Minting = () => {
         <div className="max-w-[1140px] mx-auto border-l-2 max-lg:border-x-2 border-black flex items-center justify-center max-lg:flex-col max-md:mx-4">
           <div className="pl-[25px] w-full max-lg:px-10 max-lg:py-5 max-md:px-6 pr-[107px] py-[42px] max-xl:px-5 max-xl:py-3.5">
             <Description
-              myClass="leading-[150%] max-w-[438px] max-lg:max-w-[389px] pb-[15px] max-xl:pb-3 max-lg:pb-2 max-md:text-sm"
               text="Most of the Hustlin’ Hardos first experienced NFTs via other
               successful projects like NBA TopShot, where revealing your newly
               minted item invoked the same emotions as opening up that first
@@ -56,6 +55,7 @@ const Minting = () => {
               shared ownership. The space has seen incredible growth over the
               past year, and it is our belief that we are in the very early
               innings of the paradigm shift that will be powered by web3."
+              myClass="leading-[150%] max-w-[438px] max-lg:max-w-[389px] pb-[15px] max-xl:pb-3 max-lg:pb-2 max-md:text-sm"
             />
             <div className="flex items-center justify-between border-2 border-black overflow-hidden  max-w-[238px] max-xl:max-w-[210px]">
               <button
@@ -85,17 +85,17 @@ const Minting = () => {
                 Time Left
               </p>
               <p className="font-semibold text-4xl leading-[100%] text-custom-red pt-1 max-lg:text-2xl max-md:text-xl">
-                {formatTime(timeRemaining)}
+                {timeChange(remainingTime)}
               </p>
             </div>
           </div>
           <div className="lg:border-x-2 border-black max-w-[570px] w-full h-[567px] max-xl:h-[509px] overflow-hidden max-lg:max-w-[470px] max-lg:h-auto relative">
             <Image
-              width={570}
-              height={567}
-              className="max-w-[570px] w-full object-cover xl:min-h-[567px] lg:min-h-[509px] max-lg:max-w-[470px]"
               src="/assets/images/breaking-news-boy.webp"
               alt="Minting-image"
+              width={570}
+              height={567}
+              className="max-w-[570px] xl:min-h-[567px] lg:min-h-[509px] max-lg:max-w-[470px] w-full object-cover pointer-events-none"
             />
           </div>
         </div>

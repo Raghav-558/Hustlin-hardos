@@ -41,7 +41,7 @@ const Team = () => {
           }}
           className="max-w-[1140px] mx-auto overflow-hidden border-l-2 border-black"
         >
-          {TEAM_LIST.map((obj, i) => (
+          {TEAM_LIST.map((item, i) => (
             <SwiperSlide
               style={{
                 backgroundImage: `url(/assets/images/team-card-bg.webp)`,
@@ -54,20 +54,15 @@ const Team = () => {
                 alt="profile-image"
                 width={88}
                 height={88}
-                className="max-w-[88px] rounded-full max-md:max-w-[60px]"
+                className="max-w-[88px] max-md:max-w-[60px] rounded-full pointer-events-none"
               />
               <p
-                className={`leading-[100%] text-4xl max-lg:text-3xl max-md:text-2xl py-4 font-black ${
-                  i === 0 || i === 2
-                    ? "text-custom-gray"
-                    : "text-custom-dark-gray"
-                }`}
-              >
-                {obj.title}
+                className={`leading-[100%] text-4xl max-lg:text-3xl max-md:text-2xl py-4 font-black ${ i === 0 || i === 2 ? "text-custom-gray" : "text-custom-dark-gray" }`} >
+                {item.title}
               </p>
               <Description
+                text={item.description}
                 myClass="max-w-[407px] mx-auto text-center max-md:text-sm text-black"
-                text={obj.description}
               />
             </SwiperSlide>
           ))}

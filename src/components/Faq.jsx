@@ -1,12 +1,12 @@
 "use client";
+import React, { useState } from "react";
 import { FAQ_LIST } from "@/utils/helper";
 import { MinusIcon, PlusIcon } from "@/utils/icons";
-import React, { useState } from "react";
 import CustomHeading from "./common/CustomHeading";
 
 const Faq = () => {
   const [open, setOpen] = useState(0);
-  const FaqHandler = (i) => {
+  const faqHandler = (i) => {
     setOpen(open === i ? null : i);
   };
   return (
@@ -24,14 +24,14 @@ const Faq = () => {
               }`}
             >
               <div
-                onClick={() => FaqHandler(i)}
+                onClick={() => faqHandler(i)}
                 className="flex items-center justify-between cursor-pointer w-full pt-8 max-lg:pb-4 max-md:pt-5 max-md:pb-2"
               >
-                <p className="leading-[100%] max-sm:leading-[120%] font-semibold text-2xl max-lg:text-xl max-md:text-lg max-[500px]:max-w-[280px]">
+                <p className="leading-[100%] font-semibold text-2xl max-sm:leading-[120%] max-lg:text-xl max-md:text-lg max-[500px]:max-w-[280px]">
                   {item}
                 </p>
                 <span
-                  className={`duration-300 ease-linear ${
+                  className={`transtion-all duration-300 ease-linear ${
                     open === i ? "rotate-180" : "rotate-90"
                   }`}
                 >
@@ -39,7 +39,7 @@ const Faq = () => {
                 </span>
               </div>
               <div
-                className={`transtition-all duration-400 ease-linear pt-4 max-lg:pt-0 overflow-hidden max-xl:overflow-y-auto ${
+                className={`transtition-all duration-400 ease-linear pt-4 max-xl:pt-0 overflow-hidden max-xl:overflow-y-auto ${
                   open === i ? "max-h-[160px]" : "max-h-0"
                 }`}
               >
