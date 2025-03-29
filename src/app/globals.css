@@ -11,15 +11,13 @@
   --color-custom-gray: #70675f;
   --color-custom-dark-gray: #a59a90;
   --color-custom-green: #00a106;
-}
-
-* {
-  font-family: "Noto Serif", serif;
+  --color-custom-blue: #55acee;
 }
 
 .font-modernofb {
   font-family: "modernofb";
 }
+
 .body,
 html {
   scroll-behavior: smooth !important;
@@ -29,9 +27,10 @@ body {
   background-image: url("/assets/images/bg-image.webp");
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: "Noto Serif", serif;
 }
 
-@keyframes marquee {
+@keyframes topbar {
   0% {
     transform: translateX(0);
   }
@@ -41,10 +40,15 @@ body {
   }
 }
 
-.animate-marquee {
-  animation: marquee 24s linear infinite;
-  width: fit-content;
+.topbar-animation {
+  animation: topbar 24s linear infinite;
   display: flex;
+  width: fit-content;
+  animation-play-state: running;
+}
+
+.topbar-animation:hover {
+  animation-play-state: paused;
 }
 
 .roadmap-arrow::after {

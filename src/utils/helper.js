@@ -1,22 +1,22 @@
-import { DiscordIcon, InstagramIcon, MediumIcon, ShipIcon, TwitterIcon } from "./icons";
+import { DiscordIcon, InstagramIcon, MediumIcon, OpenSeaIcon, TwitterIcon } from "./icons";
 
 export const MARKET_DATA_LIST = [
-  { title: "S&P", change: "-1.01%", color: "text-custom-red" },
-  { title: "Shanghai", change: "+0.87%", color: "text-custom-yellow" },
-  { title: "FTSE 100", change: "+0.13%", color: "text-custom-yellow" },
-  { title: "ASD 100", change: "+0.13%", color: "text-custom-yellow" },
-  { title: "Brent Crude Oil", change: "-0.24%", color: "text-custom-red" },
-  { title: "DSC", change: "-0.24%", color: "text-custom-red" },
-  { title: "AXD 100", change: "+0.13%", color: "text-custom-yellow" },
-  { title: "Euro/Dollar", change: "+0.02%", color: "text-custom-yellow" },
-  { title: "S&P", change: "-1.01%", color: "text-custom-red" },
-  { title: "Shanghai", change: "+0.87%", color: "text-custom-yellow" },
-  { title: "FTSE 100", change: "+0.13%", color: "text-custom-yellow" },
-  { title: "ASD 100", change: "+0.13%", color: "text-custom-yellow" },
-  { title: "Brent Crude Oil", change: "-0.24%", color: "text-custom-red" },
-  { title: "DSC", change: "-0.24%", color: "text-custom-red" },
-  { title: "AXD 100", change: "+0.13%", color: "text-custom-yellow" },
-  { title: "Euro/Dollar", change: "+0.02%", color: "text-custom-yellow" },
+  { title: "S&P", value: "-1.01%", color: "text-custom-red" },
+  { title: "Shanghai", value: "+0.87%", color: "text-custom-yellow" },
+  { title: "FTSE 100", value: "+0.13%", color: "text-custom-yellow" },
+  { title: "ASD 100", value: "+0.13%", color: "text-custom-yellow" },
+  { title: "Brent Crude Oil", value: "-0.24%", color: "text-custom-red" },
+  { title: "DSC", value: "-0.24%", color: "text-custom-red" },
+  { title: "AXD 100", value: "+0.13%", color: "text-custom-yellow" },
+  { title: "Euro/Dollar", value: "+0.02%", color: "text-custom-yellow" },
+  { title: "S&P", value: "-1.01%", color: "text-custom-red" },
+  { title: "Shanghai", value: "+0.87%", color: "text-custom-yellow" },
+  { title: "FTSE 100", value: "+0.13%", color: "text-custom-yellow" },
+  { title: "ASD 100", value: "+0.13%", color: "text-custom-yellow" },
+  { title: "Brent Crude Oil", value: "-0.24%", color: "text-custom-red" },
+  { title: "DSC", value: "-0.24%", color: "text-custom-red" },
+  { title: "AXD 100", value: "+0.13%", color: "text-custom-yellow" },
+  { title: "Euro/Dollar", value: "+0.02%", color: "text-custom-yellow" },
 ];
 
 export const HEADER_LIST = [
@@ -34,11 +34,11 @@ export const HEADER_LIST = [
   },
   {
     icon: <MediumIcon />,
-    link: "https://www.linkedin.com/",
+    link: "https://medium.com/",
   },
   {
-    icon: <ShipIcon />,
-    link: "https://discord.com/",
+    icon: <OpenSeaIcon />,
+    link: "https://opensea.io/",
   },
 ];
 
@@ -78,23 +78,19 @@ export const FAQ_LIST = [
 export const TEAM_LIST = [
   {
     title: "Executive Hardo ",
-    description:
-      "Crypto startup executive, former VC Investor (US$ 1B+ AuM), former MBB Consultant, ",
+    description: "Crypto startup executive, former VC Investor (US$ 1B+ AuM), former MBB Consultant, ",
   },
   {
     title: "Johnny Banjo ",
-    description:
-      "The Hustlin’ Hardos have arrived to the metaverse! 9,999 Hardos have taken over. Lorem Ipsum is simply dummy text of the printing industry. ",
+    description: "The Hustlin’ Hardos have arrived to the metaverse! 9,999 Hardos have taken over. Lorem Ipsum is simply dummy text of the printing industry. ",
   },
   {
     title: "Executive Hardo ",
-    description:
-      "Crypto startup executive, former VC Investor (US$ 1B+ AuM), former MBB Consultant, ",
+    description: "Crypto startup executive, former VC Investor (US$ 1B+ AuM), former MBB Consultant, ",
   },
   {
     title: "Johnny Banjo ",
-    description:
-      "The Hustlin’ Hardos have arrived to the metaverse! 9,999 Hardos have taken over. Lorem Ipsum is simply dummy text of the printing industry. ",
+    description: "The Hustlin’ Hardos have arrived to the metaverse! 9,999 Hardos have taken over. Lorem Ipsum is simply dummy text of the printing industry. ",
   },
 ];
 

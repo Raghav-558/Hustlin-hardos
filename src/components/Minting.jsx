@@ -81,10 +81,10 @@ const Minting = () => {
               }
             />
             <div>
-              <p className="text-lg leading-[100%] text-custom-green max-lg:text-base max-md:text-sm">
+              <p className="text-lg font-semibold leading-[100%] text-custom-green max-lg:text-base max-md:text-sm pb-1">
                 Time Left
               </p>
-              <p className="font-semibold text-4xl leading-[100%] text-custom-red pt-1 max-lg:text-2xl max-md:text-xl">
+              <p className="font-semibold text-4xl leading-[100%] text-custom-red max-lg:text-2xl max-md:text-xl">
                 {timeChange(remainingTime)}
               </p>
             </div>

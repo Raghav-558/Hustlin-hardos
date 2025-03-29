@@ -57,7 +57,7 @@ const LatestTweets = () => {
                 <p className="text-sm leading-[100%]">{item.date}</p>
               </div>
               <Description myClass="max-md:text-sm pb-[15px] pt-[13px]" text={item.description}/>
-              <Link href="#" className="underline decoration-black underline-offset-2 decoration-[1px] hover:text-custom-red duration-300 ease-linear hover:decoration-custom-red" >
+              <Link href="#" className="underline decoration-black underline-offset-2 decoration-[1px] hover:text-custom-blue transition-all duration-300 ease-linear hover:decoration-custom-blue" >
                 Read More...
               </Link>
             </SwiperSlide>

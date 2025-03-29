@@ -7,7 +7,7 @@ const Hero = () => {
     <div className="max-w-[1920px] mx-auto overflow-hidden ">
       <Header />
       <div className="px-4">
-        <h1 className="font-modernofb text-center leading-[100%] text-[157px] pt-[25px] max-xl:pt-4 max-lg:pt-3 max-sm:pb-2 max-xl:text-[120px] max-lg:text-[80px] max-md:text-6xl max-sm:text-[40px]">
+        <h1 className="font-modernofb font-normal text-center leading-[100%] text-[157px] pt-[25px] max-xl:pt-4 max-lg:pt-3 max-sm:pb-2 max-xl:text-[120px] max-lg:text-[80px] max-md:text-6xl max-sm:text-[40px]">
           THE HUSTLIN’ HARDOS.
         </h1>
       </div>
